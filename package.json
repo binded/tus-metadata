@@ -1,6 +1,5 @@
 {
   "name": "tus-metadata",
-  "version": "1.0.0",
   "description": "Decode/encode Tus Upload-Metadata strings",
   "main": "./lib/index.js",
   "directories": {
@@ -18,9 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blockai/tus-metadata.git"
+    "url": "https://github.com/blockai/tus-metadata.git"
   },
-  "keywords": ["tus","metadata","parser","encode","decode"],
+  "keywords": [
+    "tus",
+    "metadata",
+    "parser",
+    "encode",
+    "decode"
+  ],
   "author": "Oli Lalonde <olalonde@gmail.com> (https://syskall.com)",
   "license": "MIT",
   "bugs": {
@@ -54,5 +59,6 @@
   },
   "dependencies": {
     "to-object-reducer": "^1.0.1"
-  }
+  },
+  "version": "1.0.0"
 }
