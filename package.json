@@ -51,5 +51,8 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "to-object-reducer": "^1.0.1"
   }
 }

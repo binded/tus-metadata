@@ -1,7 +1,14 @@
 import test from 'blue-tape'
-import init from '../src'
+import { encode, decode } from '../src'
 
-test('todo', (t) => {
-  t.ok(!!init)
+const str = 'filename d29ybGRfZG9taW5hdGlvbl9wbGFuLnBkZg==, mimetype dGV4dC9wbGFpbg=='
+
+test((t) => {
+  const obj = decode(str)
+  t.deepEqual(obj, {
+    filename: 'world_domination_plan.pdf',
+    mimetype: 'text/plain',
+  })
+  t.equal(encode(obj), 'filename d29ybGRfZG9taW5hdGlvbl9wbGFuLnBkZg==,mimetype dGV4dC9wbGFpbg==')
   t.end()
 })
