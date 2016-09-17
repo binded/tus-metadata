@@ -7,10 +7,11 @@ const base64encode = str => Buffer.from(str, 'utf8').toString('base64')
 export const decode = (str = '') => {
   const keypairs = str
     .split(',')
-    .map(s => s.trim())
+    // .map(s => s.trim())
   const keyvals = keypairs
     .map(s => s.split(' '))
     .filter(arr => arr.length === 2)
+    .filter(([key]) => key !== '')
     .map(([key, val]) => [key, base64decode(val)])
   return keyvals.reduce(toObject, {})
 }

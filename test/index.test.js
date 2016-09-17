@@ -12,3 +12,14 @@ test((t) => {
   t.equal(encode(obj), 'filename d29ybGRfZG9taW5hdGlvbl9wbGFuLnBkZg==,mimetype dGV4dC9wbGFpbg==')
   t.end()
 })
+
+// TODO?
+/*
+const invalidStrings = [
+  'filename d29ybGRfZG9taW5hdGlvbl9wbGFuLnBkZg==, foo YmFy',
+  'filename d29ybGRfZG9taW5hdGlvbl9wbGFuLnBkZg== foo, YmFy',
+  'filename',
+  'file name woot',
+  'file,name YmFy',
+]
+*/
