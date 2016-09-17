@@ -1,7 +1,7 @@
 import test from 'blue-tape'
 import { encode, decode } from '../src'
 
-const str = 'filename d29ybGRfZG9taW5hdGlvbl9wbGFuLnBkZg==, mimetype dGV4dC9wbGFpbg=='
+const str = 'filename d29ybGRfZG9taW5hdGlvbl9wbGFuLnBkZg==,mimetype dGV4dC9wbGFpbg=='
 
 test((t) => {
   const obj = decode(str)
