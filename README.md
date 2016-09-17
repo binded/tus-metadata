@@ -16,11 +16,11 @@ Requires Node v6+
 
 See [./test](./test) directory for usage examples.
 
-**metadata.decode(str)**
+**decode(str)**
 
 Accepts an `Upload-Metadata` encoded string and returns a key/value object.
 
-**metadata.encode(obj)**
+**encode(obj)**
 
 Accepts an object and returns an `Upload-Metadata` encoded string.
 
